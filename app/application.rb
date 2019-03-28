@@ -7,10 +7,11 @@ class Application
     afternoon = (13..24)
 
     def greet
-    if Time.now == morning
-      resp.write "Good Morning"
-    else
-      resp.write "Good Afternoon"
+      if Time.now == morning
+        resp.write "Good Morning"
+      else
+        resp.write "Good Afternoon"
+      end
     end
-  end
+
 end
