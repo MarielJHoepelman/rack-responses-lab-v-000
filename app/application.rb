@@ -8,7 +8,7 @@ class Application
     # else Time.now.hour.between?(12, 24)
     #   resp.write "Good Afternoon."
 
-    if Time.now.hour > 12
+    if Time.now.hour <  12
       resp.write "Good Morning!"
     else
       resp.write "Good Afternoon!"
