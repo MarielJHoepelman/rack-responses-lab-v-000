@@ -3,8 +3,8 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    morning = (1..12)
-    afternoon = (13..24)
+    Time.now.morning = (1..12)
+    Time.now.afternoon = (13..24)
 
     if Time.now == morning
       resp.write "Good Morning"
