@@ -4,7 +4,7 @@ class Application
     resp = Rack::Response.new
 
     morning = (1..12)
-    afternoon = (12..)
+    afternoon = (13..24)
 
     def greet
     if Time.now == morning
